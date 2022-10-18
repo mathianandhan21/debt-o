@@ -29,7 +29,7 @@ def get_response():
     user_response = request.form['user_text']
     query = user_response.lower()
     if query in ["hi", "hey", "is anyone there?", "hello", "hay", "hi debt-o","hey debt-o"]:
-        bot_response = "Hey debt-o's wholesome welcome!!!"
+        bot_response = "Hey Debt-o's wholesome welcome!!!"
     elif query not in ['bye', 'good bye', 'take care']:
         bot_response = get_bot_response(query)
         __listdata.remove(query)
@@ -60,7 +60,7 @@ def get_bot_response(input):
     input_check.sort()
     
     if input_check[-2] == 0:
-        return "Any other debt-o's?"
+        return "Any other questions for debt-o?"
     else: 
         return answer
 
