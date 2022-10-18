@@ -60,7 +60,7 @@ def get_bot_response(input):
     input_check.sort()
     
     if input_check[-2] == 0:
-        return "Any other debt-o's?"
+        return "Any other question for Debt-o'?"
     else: 
         return answer
 
