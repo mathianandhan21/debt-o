@@ -30,6 +30,12 @@ def get_response():
     query = user_response.lower()
     if query in ["hi", "hey", "is anyone there?", "hello", "hay", "hi debt-o","hey debt-o"]:
         bot_response = "Hey Debt-o's wholesome welcome!!!"
+    elif query in ["about debt process"]:
+        bot_response = "Debt collection is the process of pursuing payments of debts owed by individuals or businesses"
+    elif query in ["is court involved"]:
+        bot_response = "If creditors were unable to collect a debt they could take the debtor to court and obtain a judgment against the debtor"
+    elif query in ["rules for debt collectors"]:
+        bot_response = "Debt collector must display or use physically threatening words, behaviour, or display notices about debts outside the debtors' property, among other regulations"
     elif query not in ['bye', 'good bye', 'take care']:
         bot_response = get_bot_response(query)
         __listdata.remove(query)
